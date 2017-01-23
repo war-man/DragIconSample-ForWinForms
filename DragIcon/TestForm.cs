@@ -23,7 +23,7 @@ namespace DraggingIcon
             winformsMap1.BackgroundOverlay.BackgroundBrush = new GeoSolidBrush(GeoColor.FromArgb(255, 198, 255, 255));
 
             //Displays the World Map Kit as a background.
-            ThinkGeo.MapSuite.WinForms.WorldMapKitWmsDesktopOverlay worldMapKitDesktopOverlay = new ThinkGeo.MapSuite.WinForms.WorldMapKitWmsDesktopOverlay();
+            WorldStreetsAndImageryOverlay worldMapKitDesktopOverlay = new WorldStreetsAndImageryOverlay();
             winformsMap1.Overlays.Add(worldMapKitDesktopOverlay);
 
             //EditInteractiveOverlay used because it already have the logic for dragging.
@@ -34,9 +34,9 @@ namespace DraggingIcon
             editInteractiveOverlay.DragControlPointsLayer.ZoomLevelSet.ZoomLevel01.ApplyUntilZoomLevel = ApplyUntilZoomLevel.Level20;
 
             //Sets the property IsActive for all the Styles of EditShapesLayer because we are using a ValueStyle instead.
-            editInteractiveOverlay.EditShapesLayer.ZoomLevelSet.ZoomLevel01.DefaultPointStyle.IsActive = false; 
-            editInteractiveOverlay.EditShapesLayer.ZoomLevelSet.ZoomLevel01.DefaultLineStyle.IsActive = false; 
-            editInteractiveOverlay.EditShapesLayer.ZoomLevelSet.ZoomLevel01.DefaultAreaStyle.IsActive = false; 
+            editInteractiveOverlay.EditShapesLayer.ZoomLevelSet.ZoomLevel01.DefaultPointStyle.IsActive = false;
+            editInteractiveOverlay.EditShapesLayer.ZoomLevelSet.ZoomLevel01.DefaultLineStyle.IsActive = false;
+            editInteractiveOverlay.EditShapesLayer.ZoomLevelSet.ZoomLevel01.DefaultAreaStyle.IsActive = false;
 
             //ValueStyle used for displaying the feature according to the value of the column "Type" for displaying with a bus or car icon.
             ValueStyle valueStyle = new ValueStyle();
@@ -79,7 +79,7 @@ namespace DraggingIcon
 
             winformsMap1.Refresh();
         }
-      
+
         private void winformsMap1_MouseMove(object sender, MouseEventArgs e)
         {
             //Displays the X and Y in screen coordinates.
@@ -91,7 +91,7 @@ namespace DraggingIcon
             //Displays world coordinates.
             statusStrip1.Items["toolStripStatusLabelWorld"].Text = "(world) X:" + Math.Round(pointShape.X, 4) + " Y:" + Math.Round(pointShape.Y, 4);
         }
-        
+
         private void btnClose_Click(object sender, EventArgs e)
         {
             this.Close();
