@@ -4,7 +4,7 @@
 
 In today’s sample, we show how to drag icons representing vehicle on the map. This is a handy feature if you want to give your users the ability to drag and drop some non stationary features such as vehicles. You can see that to accomplish this functionality, you can use EditInteractiveOverlay as it already has all the necessary logic for dragging purposes. Look at the code to see how to set up that overlay to have the expected behavior.
 
-![Screenshot](https://github.com/ThinkGeo/DraggingIconSample-ForWinForms/blob/master/ScreenShot.png)
+![Screenshot](https://github.com/ThinkGeo/DraggingSample-ForWinForms/blob/master/ScreenShot.png)
 
 ### Requirements
 This sample makes use of the following NuGet Packages
