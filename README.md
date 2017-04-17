@@ -1,4 +1,4 @@
-# Dragging Icon Sample for WinForms
+# Drag Icon Sample for WinForms
 
 ### Description
 
@@ -11,7 +11,7 @@ Please refer to [Wiki](http://wiki.thinkgeo.com/wiki/map_suite_desktop_for_winfo
 ### Requirements
 This sample makes use of the following NuGet Packages
 
-[MapSuite 10.0.0.0](https://www.nuget.org/packages?q=thinkgeo)
+[MapSuite 10.0.0](https://www.nuget.org/packages?q=ThinkGeo)
 
 ### About the Code
 
