@@ -1,4 +1,4 @@
-# Drag Icon Sample
+# Drag Icon Sample for WinForms
 
 ### Description
 
