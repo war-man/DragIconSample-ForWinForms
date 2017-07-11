@@ -14,9 +14,15 @@ This sample makes use of the following NuGet Packages
 [MapSuite 10.0.0](https://www.nuget.org/packages?q=ThinkGeo)
 
 ### About the Code
+```csharp
+ValueStyle valueStyle = new ValueStyle();
+valueStyle.ColumnName = "Type";
 
-Working...
-
+PointStyle carPointStyle = new PointStyle(new GeoImage("../../data/car_normal.png"));
+carPointStyle.PointType = PointType.Bitmap;
+PointStyle busPointStyle = new PointStyle(new GeoImage("../../data/bus_normal.png"));
+busPointStyle.PointType = PointType.Bitmap;
+```
 ### Getting Help
 
 [Map Suite Desktop for Winforms Wiki Resources](http://wiki.thinkgeo.com/wiki/map_suite_desktop_for_winforms)
@@ -30,7 +36,9 @@ Working...
 ### Key APIs
 This example makes use of the following APIs:
 
-Working...
+- [ThinkGeo.MapSuite.Styles.ValueStyle](http://wiki.thinkgeo.com/wiki/api/thinkgeo.mapsuite.styles.valuestyle)
+- [ThinkGeo.MapSuite.Styles.PointStyle](http://wiki.thinkgeo.com/wiki/api/thinkgeo.mapsuite.styles.pointstyle)
+- [ThinkGeo.MapSuite.Styles.PointType](http://wiki.thinkgeo.com/wiki/api/thinkgeo.mapsuite.styles.pointtype)
 
 ### About Map Suite
 Map Suite is a set of powerful development components and services for the .Net Framework.
